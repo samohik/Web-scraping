@@ -88,7 +88,7 @@ class Parser:
             try:
                 description: str = item.find("div", class_="short-description").text
             except AttributeError:
-                print("If that's too fast, just add the time on line 33.")
+                print("If that's too fast, just add the time on line 42.")
                 description = "Nothing!"
             href: str = item.find("a", {"data-item-name": "detail-page-link"})["href"]
             title: str = item.find(
